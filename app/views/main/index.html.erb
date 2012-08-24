@@ -1,0 +1,13 @@
+<h1>Asset Operation Service</h1>
+<h3>Available Actions</h3>
+<%= debug @opsClient.wsdl.soap_actions %>
+<h3>listMessages() Test</h3>
+<%= debug @listMessagesResponse.to_hash %>
+<h3>read() Test</h3>
+<%= debug @readResponse.to_hash %>
+
+<h1>Security Service</h1>
+<h3>Available Actions</h3>
+<%= debug @securityClient.wsdl.soap_actions %>
+<h3>authenticate() Test</h3>
+<%= debug @authenticateResponse.to_hash %>
