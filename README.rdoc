@@ -5,8 +5,8 @@ A simple Rails application that performs a few simple Cascade Web Services tests
 
 == Built with...
 * Pow[http://pow.cx/]
-* Powder gem[https://github.com/rodreegez/powder]
-* Bundler gem[http://gembundler.com/] for managing gem dependencies
-* Saveon gem[http://savonrb.com] for managing SOAP connections
-* Twitter Bootstrap[http://twitter.github.com/bootstrap] framework to make things pretty
-* jQuery
+* {Powder gem}[https://github.com/rodreegez/powder]
+* {Bundler gem}[http://gembundler.com/] for managing gem dependencies
+* {Savon gem}[http://savonrb.com] for managing SOAP connections
+* {Twitter Bootstrap framework}[http://twitter.github.com/bootstrap] to make things pretty
+* jQuery[http://jquery.com]
