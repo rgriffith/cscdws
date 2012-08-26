@@ -1,0 +1,11 @@
+<tr>
+	<td><%= message[:to] %></td>
+	<td><%= message[:from] %></td>
+	<td>
+		<%= message[:subject] %> <a href="#" class="message-content-display" title="View content"><i class="icon-eye-open"></i></a>
+		<div style="display:none">
+			<%= message[:body].html_safe %>
+		</div>
+	</td>
+	<td><%= l message[:date].to_date, :format => :long %></td>
+</tr>

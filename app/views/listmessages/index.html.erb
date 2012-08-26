@@ -1,0 +1,46 @@
+<div class="page-header">
+  <h1>Test listMessages() <small><a href="/listmessages.json">JSON</a> | <a href="/listmessages.xml">XML</a></small></h1>
+</div>
+
+<table class="table table-condensed table-striped">
+	<thead>
+		<tr>
+			<th>to:</th>
+			<th>from:</th>
+			<th>subject</th>
+			<th>date</th>
+		</tr>
+	</thead>
+<% @list_messages.each do |m| %>
+	<%= render :partial => "message", :locals => { :message => m } %>	
+<% end %>
+</table>
+
+<p><a data-toggle="collapse" data-target="#response-dump" href="#"><i class="icon-info-sign"></i> View raw response</a></p>
+<div id="response-dump" class="collapse">
+	<%= debug @response.to_hash %>
+</div>
+
+
+<div class="modal hide" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Message Content</h3>
+  </div>
+  <div class="modal-body"></div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+	var messageModal = $("#messageModal").modal({show:false});
+	
+	$('.message-content-display').click(function(){
+		$('.modal-body', messageModal).html($(this).next('div').html());
+		messageModal.modal('show');
+		return false;
+	});
+});
+</script>
