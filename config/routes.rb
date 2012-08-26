@@ -1,5 +1,11 @@
 Cscdws::Application.routes.draw do
-  get "main/index"
+  match "/authenticate" => "authenticate#index"
+
+  match "/listmessages" => "listmessages#index"  
+  
+  match "/read" => "read#index"  
+  match "/read/:assettype/:id" => "read#asset"
+  
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
