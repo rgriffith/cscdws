@@ -34,4 +34,8 @@ Cscdws::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # Store paths to the Cascade WSDL files
+  config.cascade_asset_operation_service_wsdl = "http://localhost:7030/ws/services/AssetOperationService?wsdl"
+  config.cascade_security_service_wsdl = "http://localhost:7030/ws/services/SecurityService?wsdl"
 end
