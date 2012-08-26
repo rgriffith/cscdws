@@ -1,13 +1,14 @@
-<h1>Asset Operation Service</h1>
-<h3>Available Actions</h3>
-<%= debug @opsClient.wsdl.soap_actions %>
-<h3>listMessages() Test</h3>
-<%= debug @listMessagesResponse.to_hash %>
-<h3>read() Test</h3>
-<%= debug @readResponse.to_hash %>
+<div class="hero-unit">
+  <h1>Cascade Web Services + Rails</h1>
+  <p>A simple Rails application that performs a few simple Cascade Web Services tests.</p>
+</div>
 
-<h1>Security Service</h1>
-<h3>Available Actions</h3>
-<%= debug @securityClient.wsdl.soap_actions %>
-<h3>authenticate() Test</h3>
-<%= debug @authenticateResponse.to_hash %>
+<h2>Built with...</h2>
+<ul>
+	<li><a href="http://pow.cx/">Pow</a></li>
+	<li><a href="https://github.com/rodreegez/powder">Powder gem</a></li>
+	<li><a href="http://gembundler.com/">Bundler gem</a> for managing gem dependencies</li>
+	<li><a href="http://savonrb.com">Savon gem</a> for managing SOAP connections</li>
+	<li><a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a> framework</li>
+	<li>jQuery</li>
+</ul>
