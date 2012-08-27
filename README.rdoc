@@ -1,6 +1,6 @@
 == Cascade Server Web Services + Rails
 
-A simple Rails application that performs a few simple Cascade Web Services tests.
+A simple Rails application that performs a few Cascade Web Services tests.
 
 
 == Built with...
