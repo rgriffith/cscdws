@@ -38,4 +38,4 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug'
 
-gem 'savon'
+gem 'savon', '1.2.0'
